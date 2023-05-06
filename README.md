@@ -6,11 +6,5 @@ Submitted by: Sunga, Emmanuel
 >BS Information System - 3rd Year
 </br>
 Application Features: </br>
-```diff
-+ Login
-+ Register
-+ Logout
-+ Displaying Posts
-+ Uploading a new Post
-```
+- ![#1589F0](https://placehold.co/15x15/1589F0/1589F0.png) `Test`
 
