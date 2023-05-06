@@ -20,11 +20,13 @@ export default class UserInput extends Component{
                     style={Styles.BaseTextBox}
                     onChangeText={this.props.Input}
                     secureTextEntry={true}
+                    type={this.props.Type}
                 />: <TextInput 
                 placeholder={this.props.Placeholder}
                 placeholderTextColor='#657786'
                 style={Styles.BaseTextBox}
                 onChangeText={this.props.Input}
+                type={this.props.Type}
             />}
             </View>
         )

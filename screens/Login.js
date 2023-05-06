@@ -45,6 +45,7 @@ export default class Login extends Component{
                     Title="Password" 
                     Placeholder="Enter your password" 
                     isSecured={true} 
+                    Type="email"
                     Input={(password)=>{
                         this.setState({ password : password})
                     }}
