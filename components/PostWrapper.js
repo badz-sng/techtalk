@@ -34,14 +34,14 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         backgroundColor: '#151f29',
         borderRadius: 10,
-        height: 150
     },
     ImageWrapper:{
         flexDirection: 'column',
         padding: 5,
     },
     PostWrapper:{
-        flexDirection: 'column'
+        flexDirection: 'column',
+        flexShrink: 1
     },    
     
     Image:{
@@ -60,7 +60,8 @@ const styles = StyleSheet.create({
         paddingBottom: 5
     },
     Post:{
-        fontSize: 25,
+        fontSize: 20,
         color: '#657786',
+        marginBottom: 10
     }
 })
