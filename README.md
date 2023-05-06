@@ -6,5 +6,11 @@ Submitted by: Sunga, Emmanuel
 >BS Information System - 3rd Year
 </br>
 Application Features: </br>
-- ![#1589F0](https://placehold.co/15x15/1589F0/1589F0.png) `#1589F0`
+<li>
+Login
+Register
+Logout
+Listing all Posts
+Uploading new Post
+</li>
 
