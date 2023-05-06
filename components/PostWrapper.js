@@ -62,6 +62,7 @@ const styles = StyleSheet.create({
     Post:{
         fontSize: 20,
         color: '#657786',
-        marginBottom: 10
+        marginBottom: 10,
+        marginTop: 10
     }
 })
