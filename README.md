@@ -1,4 +1,7 @@
 # Tech Talk
+<p align="center">
+  <img src="/images/logo_transparent.png" width="350" title="Logo">
+</p>
 ## Application Development Practical Exam
 ### This project is tested using an <ins>Android Device</ins>.
 
