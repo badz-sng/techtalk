@@ -1,6 +1,6 @@
 # Tech Talk
 ## Application Development Practical Exam
-### This project is tested using an <u>Android Device</u>.
+### This project is tested using an <ins>Android Device</ins>.
 
 Submitted by: Sunga, Emmanuel
 >BS Information System - 3rd Year
