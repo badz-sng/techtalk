@@ -69,7 +69,6 @@ export default class Home extends Component{
             },...this.state.posts]})
             this.setState({postContent: ''})
         }
-        
     }
 
     render(){
