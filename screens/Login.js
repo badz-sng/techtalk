@@ -35,27 +35,34 @@ export default class Login extends Component{
                         Login
                     </Text>
                     <UserInput 
-                    Title="Email" 
-                    Placeholder="Enter your email" 
-                    Input={(email)=>{
-                        this.setState({ email : email})
-                    }}
+                        Title="Email" 
+                        Placeholder="Enter your email" 
+                        Input={(email)=>{
+                            this.setState({ email : email})
+                        }}
                     />
                     <UserInput 
-                    Title="Password" 
-                    Placeholder="Enter your password" 
-                    isSecured={true} 
-                    Type="email"
-                    Input={(password)=>{
-                        this.setState({ password : password})
-                    }}
+                        Title="Password" 
+                        Placeholder="Enter your password" 
+                        isSecured={true} 
+                        Type="email"
+                        Input={(password)=>{
+                            this.setState({ password : password})
+                        }}
                     />
                     <UserButton 
                     Title="Login"
                     pressEvent={async ()=>{
                         let [res, error] = await this.UserApi.login(this.state.email, this.state.password)
                         if(error){
-                            this.setState({message: error})
+                            if(this.state.email && this.state.password === "" ){
+                                // this.setState({message: "Email and/or Password fields is/are empty"})
+                                alert("Email and/or Password fields is/are empty")
+                            }else{
+                                this.setState({message: error})
+                                alert(this.state.message)
+                            }
+                           
                         }else{
                             setStorage('user', res)
                             let user = await getStorage('user')
