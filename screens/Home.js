@@ -34,7 +34,7 @@ export default class Home extends Component{
         const postApi = new PostApi;
         const [res, error] = await postApi.posts();
         if(error){
-            console.log(error)
+            // console.log(error)
         }else{
             this.setState({posts: res})
         }
@@ -47,11 +47,11 @@ export default class Home extends Component{
         const postApi = new PostApi;
         const [res, error] = await postApi.uploadPost({'post': this.state.postContent});
         if(error){
-            console.log("Error creatNewPost(): ",error)
+            // console.log("Error creatNewPost(): ",error)
         }else{
-            console.log("Response from creatNewPost()" ,res)
+            // console.log("Response from creatNewPost()" ,res)
             let data = await getStorage('user')
-            console.log(data)
+            // console.log(data)
             this.setState({posts:[{
                 "id": res.id,
                 "user_id": res.user_id,

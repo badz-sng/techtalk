@@ -66,9 +66,9 @@ export default class Login extends Component{
                         }else{
                             setStorage('user', res)
                             let user = await getStorage('user')
-                            console.log('USER: ',user.token)
-                            console.log(res.token)
-                            console.log(res)
+                            // console.log('USER: ',user.token)
+                            // console.log(res.token)
+                            // console.log(res)
                             this.setState({route: "Home"})
                             this.props.navigation.navigate(this.state.route)
                         }
